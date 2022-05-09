@@ -49,7 +49,7 @@ p#credit {
   width: 70vw;
   display: flex;
   flex-direction: column;
-  --background-color: lightgray;
+  --background-color: rgb(240, 234, 234);
   background: var(--background-color);
 }
 
@@ -96,4 +96,42 @@ form label {
 .form-row {
   display: flex;
   gap: 100px;
+  margin: 15px 0px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #9cb6eb;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.384);
+}
+
+input.error {
+  border: 1px solid #ec1515;
+}
+
+button[type="submit"] {
+  background: #596D48;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin: 30px 15px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.384);
+}
+
+#bottom {
+  font-size: 1.2rem;
+}
+
+#bottom a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 700;
 }
